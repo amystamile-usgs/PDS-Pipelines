@@ -1,0 +1,22 @@
+div
+{
+    height: 400px;
+    width: 1800px;
+    overflow: auto;
+}
+
+table:planet_table
+{
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+h3
+{
+  text-decoration: underline;
+}
+
+th, td
+{
+  padding: 10px;
+}

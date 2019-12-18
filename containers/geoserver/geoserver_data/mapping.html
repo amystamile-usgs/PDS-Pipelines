@@ -3,23 +3,47 @@
     <meta charset="utf-8"/>
     <title>Mapping Example</title>
     <script src="mapping_info.js"></script>
+    <link rel="stylesheet" href="map_page_layout.css"
   </head>
   <body>
-    <p>testing</p>
-    <table id="planet_table">
-      <tr>
-        <th>FID</th>
-        <th>UPCID</th>
-		    <th>ISISID</th>
-		    <th>PRODUCTID</th>
-        <th>SOURCE</th>
-        <th>DETACHED_LABEL</th>
-        <th>INSTRUMENT</th>
-        <th>DISPLAYNAME</th>
-        <th>MISSION</th>
-        <th>SPACECRAFT</th>
-        <th>TARGETNAME</th>
-        <th>JSONKEYWORDS</th>
-    </table>
+    <h3>planet data:</h3>
+    <div>
+      <table id="planet_table">
+        <tr>
+          <th>FID</th>
+          <th>UPCID</th>
+  		    <th>ISISID</th>
+  		    <th>PRODUCTID</th>
+          <th>SOURCE</th>
+          <th>DETACHED_LABEL</th>
+          <th>INSTRUMENT</th>
+          <th>DISPLAYNAME</th>
+          <th>MISSION</th>
+          <th>SPACECRAFT</th>
+          <th>TARGETNAME</th>
+          <!--<th>JSONKEYWORDS</th>-->
+        </tr>
+      </table>
+    </div>
+    <br>
+    <h3>json camstat data:</h3>
+    <div>
+      <table id="json_table">
+        <th>local time maximum</th>
+        <th>local time minimum</th>
+        <th>maximum emission</th>
+        <th>maximum incidence</th>
+        <th>maximum longitude</th>
+        <th>maximum latitude</th>
+        <th>maximum phase</th>
+        <th>maximum resolution</th>
+        <th>minimum emission</th>
+        <th>minimum incidence</th>
+        <th>minimum longitude</th>
+        <th>minimum latitude</th>
+        <th>minimum phase</th>
+        <th>minimum resolution</th>
+      </table>
+    </div>
   </body>
 </html>
