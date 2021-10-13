@@ -382,7 +382,7 @@ def main(user_args):
     RQ_main = RedisQueue('UPC_ReadyQueue', namespace)
     RQ_error = RedisQueue(upc_error_queue, namespace)
     RQ_work = RedisQueue('UPC_WorkQueue', namespace)
-    
+
     logger.info("UPC Processing Queue: %s", RQ_main.id_name)
 
     RQ_lock = RedisLock(lock_obj)
@@ -507,7 +507,7 @@ def main(user_args):
             for file in workarea_files:
                 os.remove(file)
 
-    RQ_work.QueueRemove(item)
+        RQ_work.QueueRemove(item)
 
     logger.info("UPC processing exited")
 
