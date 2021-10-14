@@ -39,9 +39,9 @@ def parse_args(qname):
                         help="The namespace used for this queue.")
 
     if qname == 'UPC':
-        parser.add_argument('--no-copy', dest="no_copy", action='store_true',
+        parser.add_argument('--no-copy', dest="copy", action='store_false',
                             help="Runs script without copying files.",
-                            default=False)
+                            default=True)
 
     args = parser.parse_args()
     return args
